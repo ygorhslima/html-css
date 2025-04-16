@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex7</title>
+    <style>
+        div.container{
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-start;
+            height: 500px;
+        }
+        div.item{
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+        }
+        #i1{ align-self: auto; }/*A*/
+        #i2{ align-self: flex-end; }/*B*/
+        #i3{ align-self: center; }/*C*/
+        #i4{ align-self: flex-start; }/*D*/
+        #i5{
+            align-self: stretch;
+            background-image: linear-gradient(to right, blue,lightblue);
+            width: 200px;
+            border: 1px solid yellow; 
+        }/*E*/
+        #i6{ align-self: center; }/*F*/
+        #i7{ 
+            order: -3;
+            align-self: flex-end;
+            height: 200px;
+            padding: 5px;
+            background-color: green;
+        }/*G*/
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4"i>D</div>
+        <div class="item" id="i5">E</div>
+        <div class="item" id="i6">F</div>
+        <div class="item" id="i7">G</div>
+    </div>
+</body>
+</html>

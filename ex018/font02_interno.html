@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fontes interno</title>
+    <style>
+        @font-face {
+            font-family:'Christmas';
+            src: url('fontes/hore_christmas/Hore Christmas.otf')
+            format('opentype');
+            font-weight: normal;
+            font-style: normal;
+           
+        }
+
+        /*
+            tipos de format()
+            - opentype (otf)
+            - truetype (ttf)
+            - embeddded-opentype
+            - truetype-aat (Apple Advanced Typography)
+            - svg
+        
+        */
+
+        body {
+            background-color: aquamarine;
+            font-family: 'Christmas';
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>usando fontes interna</h1>
+    <p>aqui está sendo utilizado uma fonte externa baixada dentro da minha pasta</p>
+
+    <p>veja o exemplo 1 <a href="fonte01_externo.html">aqui</a></p>
+
+    <p>veja o exemplo 2 <a href="font03_alinhamento.html">aqui</a></p>
+</body>
+</html>

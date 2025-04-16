@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: lightsalmon;
+        }
+
+        #container-login{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+
+            background-image: url('img/coffee.jpg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            height: 400px;
+            width: 100vw;
+            box-shadow: 1px 1px 15px black;
+
+        }
+        #container-login > #section-login{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgba(237, 237, 237, 0.727);
+            width: 340px;
+            height: 340px;
+            margin: 10px;
+            border-radius: 20px;
+
+        }
+        #container-login > #section-login > form > .dados{
+            margin: 4px;
+            padding: 3px;
+        }
+        input{
+            border: none;
+            border-radius: 20px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="container-login">
+            <section id="section-login">
+                <h1 style="color: rgb(203, 137, 14);">Cadastre-se</h1>
+                <form>
+                    <div class="dados">
+                        <label for="nome">Nome</label>
+                        <br>
+                        <input type="text" name="nome" id="nome" required>
+                    </div>
+                    <div class="dados">
+                        <label for="email">Email</label>
+                        <br>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    
+                    <div class="dados">
+                        <label for="cpf">CPF</label>
+                        <br>
+                        <input type="text" name="cpf" id="cpf" required>
+                    </div>
+                    
+                    <div class="dados">
+                        <label for="data-nasc">Data de Nascimento</label>
+                        <br>
+                        <input type="date" name="data-nasc" id="data-nasc" required>
+                    </div>
+                    
+                    <input type="submit" value="Cadastrar-se">
+                </form>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Menu FlexBox</title>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        
+        <button id="menu-btn" class="button">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+        
+        <nav id="menu">
+            <a href="#">opção 1</a>
+            <a href="#">opção 2</a>
+            <a href="#">opção 3</a>
+            <a href="#">opção 4</a>
+            <a href="#">opção 5</a>
+            <a href="#">opção 6</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Teste de flexbox</h2>
+        <section>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui illum, saepe vitae eum ratione voluptatem, aut voluptate non error ducimus eaque obcaecati quidem maiores eos, neque nemo dolores doloremque accusantium. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis deleniti obcaecati, nihil esse mollitia neque facilis a ipsum ullam amet fuga ipsa ut cupiditate repellendus aliquid deserunt exercitationem, architecto expedita.</p>
+        </section>
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eum eius, blanditiis accusantium qui beatae culpa esse cumque voluptatem ipsum. Architecto nulla perspiciatis aperiam doloremque enim sit distinctio, dolor at? Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eius sint debitis eum dicta impedit accusamus aliquam molestias ullam, numquam recusandae, labore nulla harum iure, velit quos nesciunt praesentium rem!</p>
+        </section>
+    </main>
+    <script>
+        const button = document.getElementById("menu-btn");
+        const menu = document.getElementById("menu")
+        button.addEventListener("click",()=>{
+            menu.classList.toggle("active");
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background: url('../imgs/fundo-madeira.jpg') no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+main {
+    height: 100vh;
+    position: relative;
+}
+
+section#telefone {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 627px;
+    width: 311px;
+    background: url('../imgs/frame-iphone.png') no-repeat;
+}
+
+iframe#tela {
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 267px;
+    height: 471px;
+}
+
+section#redes-sociais {
+    position: absolute;
+    top: 28%;
+    left: 90%;
+}
+
+section#redes-sociais img {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    box-sizing: border-box;
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.51);
+    transform: translate(-10px, -1px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.685);
+    transition: transform 0.5s;
+}
+
+/* Estilos para telas menores que 768px */
+@media screen and (max-width: 768px) {
+    section#telefone {
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+
+        margin-bottom: 30px;
+    }
+
+    section#redes-sociais {
+        top: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 5%;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    section#redes-sociais img {
+        width: 40px; /* Reduzir o tamanho para telas menores */
+        margin: 0;
+    }
+}

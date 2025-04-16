@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: #00e1ffd9;
+}
+
+main {
+    background-color:white;
+    width: 70%;
+    padding: 10px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px black;
+
+}
+
+#principal {
+    background-color: #4CAAFD;
+    text-align: center;
+    color: rgb(9, 9, 9);
+
+}
+
+.basico {
+    color: green;
+   
+}
+
+.intermediario {
+    color: yellow;
+}
+
+.avancado {
+    color: red;
+}
+
+.subtitulo {
+    background-image: linear-gradient(to right, yellow, red);
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            border: 0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body{
+            height: 100vh;
+            background-image: linear-gradient(to bottom, #2C2C34, #494850);
+        }
+        header{
+            display: flex;
+            flex-direction: column;
+            background-color: #C47335;
+            padding: 10px;
+            align-items: center;
+        }
+        nav{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            background-color: #b86d34b1;
+        }
+        nav > a{
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 10px;
+            transition: 0.9s;
+            border-radius: 20px;
+        }
+        nav > a:hover{
+            background-color: #494850;
+            border-radius: 20px;
+            transform: translateY(-5px);
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.463);
+        }
+        #titulo{
+            color: #FCDC4D;
+            justify-content: center;
+        }
+        
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: white;
+            width: 97%;
+            padding: 15px;
+            margin: auto;
+
+        }
+
+        @media screen and (max-width:500px) {
+                nav {
+                   display: flex;
+                   flex-direction: column; 
+                }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="titulo">Título do site</h1>
+    </header>
+    <nav>
+        <a href="#">Página Inicial</a>
+        <a href="#">Sobre</a>
+        <a href="#">Serviços</a>
+        <a href="#">Contato</a>
+        <a href="#">Blog</a>
+    </nav>
+    
+    <main>
+        <div class="container">
+            <section class="conteudo">
+                <h1>Bem-vindo ao nosso site!</h1>
+                <p>Descubra conteúdos incríveis e fique por dentro das novidades.</p>
+            </section>
+    
+            <article>
+                <h2>Última notícia</h2>
+                <p>Confira as informações mais recentes sobre o nosso projeto.</p>
+
+
+                <section>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor nesciunt voluptate ratione! Quod voluptates error commodi repellat harum! Expedita praesentium incidunt debitis rerum dolorum hic eum et ipsa, reiciendis neque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, ipsam ullam inventore omnis voluptas doloribus ratione quaerat enim tempora magnam quis eligendi. Ab necessitatibus nobis eligendi. Magnam repellendus itaque odio.</p>
+                
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi explicabo maxime enim aperiam pariatur modi ut dicta veniam odio rem necessitatibus, velit nihil, laborum cum ea. Omnis fugiat iste aliquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium consequuntur repellendus delectus laudantium sapiente blanditiis sunt! Quae est cum sapiente nobis qui harum dolores quam. Maiores nemo iusto illum doloremque!</p>
+                </section>
+
+            </article>
+    
+            <aside>
+                <h3>Links úteis</h3>
+                <ul>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </aside>
+        </div>
+    </main>
+    
+    
+    <footer>
+
+    </footer>
+
+   
+</body>
+</html>

@@ -1,0 +1,21 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: azure;
+}
+h1#titulo{
+    text-align: center;
+    color: red;
+}
+
+a{
+    text-decoration: none;
+    background-color: orange;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 10px;
+
+}
+a:hover{
+    transition: 1s;
+    opacity: 0.6;
+}
