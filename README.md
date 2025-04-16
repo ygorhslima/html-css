@@ -9,10 +9,14 @@ Este repositório contém os arquivos e exercícios desenvolvidos durante o curs
 - Inserção de imagens, vídeos e áudios
 - Listas ordenadas e não ordenadas
 - Tabelas e formulários
+- iframes
 - Introdução ao CSS
+- cores, fontes
+- modelo de caixa
 - Estilização de elementos HTML
-- Layouts com CSS
 - Responsividade e media queries
+- Flexbox e GridLayout
+- Position
 
 ## 📁 Organização do Repositório
 
