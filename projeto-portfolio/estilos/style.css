@@ -64,14 +64,14 @@ main{
   gap: 20px;
   margin-top: 20px;
 }
-section#ficha{
+#ficha{
   background-color: var(--fundo-card);
   padding: 20px;
   border-radius: 8px;
   grid-column: 2/2;
 }
 
-section#ficha img.foto{
+#ficha img.foto{
   width: 200px;
   aspect-ratio: 1/1;
   object-fit: cover;
@@ -83,7 +83,7 @@ section#ficha img.foto{
   margin: auto;
   margin-bottom: 15px;
 }
-section#ficha h1{
+#ficha h1{
   color: var(--destaque);
   margin: 15px 0;
   font-size: 1.8em;
@@ -105,4 +105,36 @@ section#ficha h1{
 }
 #social a:hover{
   color: var(--destaque-inverso);
+}
+
+#detalhes{  
+  grid-column: 2/2;
+}
+
+article{
+  background-color: var(--fundo-card);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+article h2{
+  color: var(--destaque);
+  margin-bottom: 10px;
+}
+
+article#video .video-container{
+  position: relative;
+  width: 100%;
+  margin: auto;
+  aspect-ratio: 16/9;
+  border: 1px solid red;
+}
+.video-container iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
 }
